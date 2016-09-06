@@ -3,7 +3,6 @@ package com.javarush.test.level23.lesson13.big01;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
-
 public class Room
 {
     private int width;
