@@ -1,4 +1,4 @@
-package com.javarush.test.level24.lesson14.big01;
+
 
 // Class for the brick objects test Git
 
