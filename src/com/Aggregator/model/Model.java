@@ -1,8 +1,8 @@
-package com.javarush.test.level28.lesson15.big01.model;
+package Aggregator.model;
 
 
-import com.javarush.test.level28.lesson15.big01.view.View;
-import com.javarush.test.level28.lesson15.big01.vo.Vacancy;
+import Aggregator.view.View;
+import Aggregator.vo.Vacancy;
 
 import java.util.ArrayList;
 import java.util.List;
