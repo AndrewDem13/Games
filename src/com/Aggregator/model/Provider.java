@@ -1,9 +1,6 @@
-package com.javarush.test.level28.lesson15.big01.model;
+package Aggregator.model;
 
-// Этот класс будет обобщать способ получения данных о вакансиях.
-
-
-import com.javarush.test.level28.lesson15.big01.vo.Vacancy;
+import Aggregator.vo.Vacancy;
 
 import java.util.List;
 
