@@ -1,7 +1,7 @@
-package com.javarush.test.level28.lesson15.big01.model;
+package Aggregator.model;
 
 
-import com.javarush.test.level28.lesson15.big01.vo.Vacancy;
+import Aggregator.vo.Vacancy;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
