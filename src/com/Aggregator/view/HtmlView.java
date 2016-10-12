@@ -1,7 +1,7 @@
-package com.javarush.test.level28.lesson15.big01.view;
+package Aggregator.view;
 
-import com.javarush.test.level28.lesson15.big01.Controller;
-import com.javarush.test.level28.lesson15.big01.vo.Vacancy;
+import Aggregator.Controller;
+import Aggregator.vo.Vacancy;
 import org.jsoup.Jsoup;
 
 import java.io.File;
