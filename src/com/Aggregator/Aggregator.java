@@ -1,10 +1,10 @@
-package com.javarush.test.level28.lesson15.big01;
+package Aggregator;
 
 
-import com.javarush.test.level28.lesson15.big01.model.HHStrategy;
-import com.javarush.test.level28.lesson15.big01.model.Model;
-import com.javarush.test.level28.lesson15.big01.model.Provider;
-import com.javarush.test.level28.lesson15.big01.view.HtmlView;
+import Aggregator.model.HHStrategy;
+import Aggregator.model.Model;
+import Aggregator.model.Provider;
+import Aggregator.view.HtmlView;
 
 public class Aggregator
 {
