@@ -1,4 +1,4 @@
-package com.javarush.test.level28.lesson15.big01.vo;
+package Aggregator.vo;
 
 public class Vacancy
 {
