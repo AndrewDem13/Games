@@ -1,2 +1,3 @@
-# Some-Java-Tasks
-My solutions of some interesting tasks I made during studying on my way to Java Junior Developer position.
+# Games
+
+My realization of some simple games I have made during JavaRush courses.
