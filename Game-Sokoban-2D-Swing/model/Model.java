@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 
 public class Model
 {
-    public static final int FIELD_SELL_SIZE = 20;
+    public static final int FIELD_CELL_SIZE = 20;
 
     private EventListener eventListener;
     private GameObjects gameObjects;
@@ -87,16 +87,16 @@ public class Model
         // ...otherwise player can move, but nearby box must be moved first
         switch (direction) {
             case LEFT:
-                nearbyBox.move(-FIELD_SELL_SIZE, 0);
+                nearbyBox.move(-FIELD_CELL_SIZE, 0);
                 break;
             case RIGHT:
-                nearbyBox.move(FIELD_SELL_SIZE, 0);
+                nearbyBox.move(FIELD_CELL_SIZE, 0);
                 break;
             case UP:
-                nearbyBox.move(0, -FIELD_SELL_SIZE);
+                nearbyBox.move(0, -FIELD_CELL_SIZE);
                 break;
             case DOWN:
-                nearbyBox.move(0, FIELD_SELL_SIZE);
+                nearbyBox.move(0, FIELD_CELL_SIZE);
                 break;
         }
         return false;
@@ -132,16 +132,16 @@ public class Model
 
         switch (direction) {
             case LEFT:
-                player.move(-FIELD_SELL_SIZE, 0);
+                player.move(-FIELD_CELL_SIZE, 0);
                 break;
             case RIGHT:
-                player.move(FIELD_SELL_SIZE, 0);
+                player.move(FIELD_CELL_SIZE, 0);
                 break;
             case UP:
-                player.move(0, -FIELD_SELL_SIZE);
+                player.move(0, -FIELD_CELL_SIZE);
                 break;
             case DOWN:
-                player.move(0, FIELD_SELL_SIZE);
+                player.move(0, FIELD_CELL_SIZE);
         }
         checkCompletion();
     }
