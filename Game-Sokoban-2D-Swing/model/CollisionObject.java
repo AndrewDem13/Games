@@ -12,19 +12,19 @@ public abstract class CollisionObject extends GameObject
 
         switch (direction) {
             case DOWN:
-                if (getY()+Model.FIELD_SELL_SIZE == gameObject.getY() && gameObject.getX() == getX())
+                if (getY()+Model.FIELD_CELL_SIZE == gameObject.getY() && gameObject.getX() == getX())
                     result = true;
                 break;
             case UP:
-                if (getY()-Model.FIELD_SELL_SIZE == gameObject.getY() && gameObject.getX() == getX())
+                if (getY()-Model.FIELD_CELL_SIZE == gameObject.getY() && gameObject.getX() == getX())
                     result = true;
                 break;
             case LEFT:
-                if (getX()-Model.FIELD_SELL_SIZE == gameObject.getX() && gameObject.getY() == getY())
+                if (getX()-Model.FIELD_CELL_SIZE == gameObject.getX() && gameObject.getY() == getY())
                     result = true;
                 break;
             case RIGHT:
-                if (getX()+Model.FIELD_SELL_SIZE == gameObject.getX() && gameObject.getY() == getY())
+                if (getX()+Model.FIELD_CELL_SIZE == gameObject.getX() && gameObject.getY() == getY())
                     result = true;
                 break;
         }

@@ -18,9 +18,9 @@ public class Player extends CollisionObject implements Movable
     @Override
     public void draw(Graphics graphics)
     {
-        graphics.drawOval(getX()-Model.FIELD_SELL_SIZE/2, getY()-Model.FIELD_SELL_SIZE/2, getWidth(), getHeight());
+        graphics.drawOval(getX()-Model.FIELD_CELL_SIZE /2, getY()-Model.FIELD_CELL_SIZE /2, getWidth(), getHeight());
         graphics.setColor(Color.YELLOW);
-        graphics.fillOval(getX()-Model.FIELD_SELL_SIZE/2, getY()-Model.FIELD_SELL_SIZE/2, getWidth(), getHeight());
+        graphics.fillOval(getX()-Model.FIELD_CELL_SIZE /2, getY()-Model.FIELD_CELL_SIZE /2, getWidth(), getHeight());
         graphics.setColor(Color.GRAY);
     }
 }
