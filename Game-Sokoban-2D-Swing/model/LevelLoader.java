@@ -1,4 +1,4 @@
-package com.javarush.test.level34.lesson15.big01.model;
+package model;
 
 
 import java.io.BufferedReader;
@@ -32,7 +32,7 @@ public class LevelLoader
         try (BufferedReader reader = new BufferedReader(new FileReader(levels.toString())))
         {
             String line;
-            int cellCenter = Model.FIELD_SELL_SIZE / 2;
+            int cellCenter = Model.FIELD_CELL_SIZE / 2;
 
             while ((line = reader.readLine()) != null)
             {
@@ -62,25 +62,25 @@ public class LevelLoader
                         case ' ': break;
 
                         case 'X':
-                            walls.add(new Wall(j*Model.FIELD_SELL_SIZE + cellCenter, i*Model.FIELD_SELL_SIZE + cellCenter));
+                            walls.add(new Wall(j*Model.FIELD_CELL_SIZE + cellCenter, i*Model.FIELD_CELL_SIZE + cellCenter));
                             break;
 
                         case '*':
-                            boxes.add(new Box(j*Model.FIELD_SELL_SIZE + cellCenter, i*Model.FIELD_SELL_SIZE + cellCenter));
+                            boxes.add(new Box(j*Model.FIELD_CELL_SIZE + cellCenter, i*Model.FIELD_CELL_SIZE + cellCenter));
                             break;
 
                         case '.':
-                            homes.add(new Home(j*Model.FIELD_SELL_SIZE + cellCenter, i*Model.FIELD_SELL_SIZE + cellCenter));
+                            homes.add(new Home(j*Model.FIELD_CELL_SIZE + cellCenter, i*Model.FIELD_CELL_SIZE + cellCenter));
                             break;
 
                         case '&':
-                            boxes.add(new Box(j*Model.FIELD_SELL_SIZE + cellCenter, i*Model.FIELD_SELL_SIZE + cellCenter));
-                            homes.add(new Home(j*Model.FIELD_SELL_SIZE + cellCenter, i*Model.FIELD_SELL_SIZE + cellCenter));
+                            boxes.add(new Box(j*Model.FIELD_CELL_SIZE + cellCenter, i*Model.FIELD_CELL_SIZE + cellCenter));
+                            homes.add(new Home(j*Model.FIELD_CELL_SIZE + cellCenter, i*Model.FIELD_CELL_SIZE + cellCenter));
 
                             break;
 
                         case '@':
-                            player = new Player(j*Model.FIELD_SELL_SIZE + cellCenter, i*Model.FIELD_SELL_SIZE + cellCenter);
+                            player = new Player(j*Model.FIELD_CELL_SIZE + cellCenter, i*Model.FIELD_CELL_SIZE + cellCenter);
                             break;
                     }
                 }

@@ -1,4 +1,4 @@
-package com.javarush.test.level34.lesson15.big01.model;
+package model;
 
 
 import java.awt.*;
@@ -15,8 +15,8 @@ public abstract class GameObject {
     public GameObject(int x, int y) {
         this.x = x;
         this.y = y;
-        this.width = Model.FIELD_SELL_SIZE;
-        this.height = Model.FIELD_SELL_SIZE;
+        this.width = Model.FIELD_CELL_SIZE;
+        this.height = Model.FIELD_CELL_SIZE;
     }
 
     public GameObject(int x, int y, int width, int height) {
